@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Byyyyy</title>
+  </head>
+  <body>
+    <h1>Hai sayang</h1>
+    <img src="g.gif" style="width: 210px" />
+    <h1>Sayang ga sama mas?</h1>
+    <button id="sayang" onclick="alert('Loveyuuuuuuuuuu')">Sayang</button>
+    <button id="btn_g" onclick="gamau(this)" style="position: absolute">Ga sayang</button>
+  </body>
+  <script>
+    function gamau(id) {
+      var mau = document.getElementById('sayang');
+      var i = Math.floor(Math.random() * 300) + 1;
+      var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+      id.style.left = i + 'px';
+      id.style.top = j + 'px';
+    }
+  </script>
+</html>
